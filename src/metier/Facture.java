@@ -6,7 +6,7 @@ import java.time.LocalDate;
 public class Facture
 {
 	private boolean estReglee;
-	private String date;
+	private Localdate date;
 	private Double montant;
 
 	Facture (){}
@@ -56,8 +56,7 @@ public class Facture
 	
 	public LocalDate getDate()
 	{
-		LocalDate time = LocalDate();
-		return time;
+		return this.date;
 	}
 
 	/**
