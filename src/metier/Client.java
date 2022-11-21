@@ -4,7 +4,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Client
-{
+
+
+	//Attributs
+
+	private String nom;
+
+
 	/** 
 	 * Crée un client.
 	 * @param nom le nom du client. 
@@ -12,6 +18,7 @@ public class Client
 	
 	public Client(String nom)
 	{
+		this.nom=nom;
 	}
 
 	/**
@@ -21,7 +28,7 @@ public class Client
 	
 	public String getNom()
 	{
-		return null;
+		return nom;
 	}
 	
 	/**
@@ -29,8 +36,10 @@ public class Client
 	 * @param nom le nom du client.
 	 */
 	
-	public void setNom(String nom)
+	public String setNom(String nom)
 	{
+		this.nom=nom;
+		return nom;
 	}
 	
 	/**
@@ -41,7 +50,9 @@ public class Client
 	
 	public Facture createFacture(int montant)
 	{
-		return null;
+		Facture newFacture = new Facture ()
+
+		return ;
 	}
 	
 	/**

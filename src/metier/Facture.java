@@ -4,34 +4,49 @@ import java.time.LocalDate;
 
 public class Facture
 {
+
+	Bool estReglee;
+	String date;
+	Double montant;
+
+	Facture () {
+	}
+
+	Facture (Bool estReglee, String date, Double montant){
+		this.estReglee=estReglee;
+		this.date=date;
+		this.montant=montant;
+	}
+
+
 	/**
 	 * Retourne le client à qui est adressée la facture..
 	 * @return le client.
 	 */
-	
+
 	public Client getClient()
 	{
 		return null;
 	}
 
-	/**
+	/** GOOD
 	 * Retourne le montant de la facture.
 	 * @return le montant de la facture.
 	 */
 	
 	public int getMontant()
 	{
-		return 0;
+		return montant;
 	}
 
-	/**
+	/** GOOD
 	 * Retourne vrai si la facture est reglée.
 	 * @return vrai ssi la facture est reglée.
 	 */
 	
 	public boolean estReglee()
 	{
-		return true;
+		return estReglee;
 	}
 
 	/**
@@ -41,7 +56,8 @@ public class Facture
 	
 	public LocalDate getDate()
 	{
-		return null;
+		LocalDateTime time = LocalDateTime.now();
+		return time;
 	}
 
 	/**
@@ -50,6 +66,7 @@ public class Facture
 	
 	public void delete()
 	{
+
 	}
 	
 	/**
@@ -57,8 +74,9 @@ public class Facture
 	 * @return une copie de la facture.
 	 */
 	
-	public Facture copie()
+	public Facture copie(Facture factureCopy)
 	{
+		Facture newFacture = new Facture ();
 		return null;
 	}
 }
