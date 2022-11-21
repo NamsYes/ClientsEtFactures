@@ -12,9 +12,12 @@ public class Facture
 	Facture (){}
 
 	Facture (boolean estReglee, String date, Double montant){
-		this.estReglee=estReglee;
-		this.date=date;
-		this.montant=montant;
+		if (montant<0) {
+			this.estReglee = estReglee;
+			this.date = date;
+			this.montant = montant;
+		}
+
 	}
 
 
