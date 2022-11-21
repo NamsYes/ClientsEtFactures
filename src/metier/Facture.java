@@ -5,9 +5,10 @@ import java.time.LocalDate;
 
 public class Facture
 {
-	private boolean estReglee;
-	private LocalDate date;
+	private Client client;
 	private Double montant;
+	private LocalDate date;
+	private boolean estReglee;
 
 	Facture (){}
 
@@ -26,7 +27,7 @@ public class Facture
 
 	public Client getClient()
 	{
-		return null;
+		return client;
 	}
 
 	/** GOOD
