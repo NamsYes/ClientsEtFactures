@@ -7,18 +7,18 @@ public class Facture
 {
 	private Client client;
 	private Double montantFacture;
-	private Localdatefacture datefacture;
+	private Localdatefacture dateFacture;
 	private boolean reglementFacure;
 
 
 
 	Facture (){}
 
-	Facture (boolean reglementFacure, Localdatefacture datefacture, Double montant){
+	Facture (boolean reglementFacure, Localdatefacture dateFacture, Double montantFacture){
 		if (montant>0) {
 			this.reglementFacure = reglementFacure;
-			this.datefacture = datefacture.now();
-			this.montant = montant;
+			this.dateFacture = dateFacture.now();
+			this.montantFacture = montantFacture;
 		}
 	}
 
@@ -59,7 +59,7 @@ public class Facture
 	
 	public Localdatefacture getdatefacture()
 	{
-		return this.datefacture;
+		return this.dateFacture;
 	}
 
 	/**
