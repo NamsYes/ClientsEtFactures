@@ -1,20 +1,20 @@
 package metier;
 
-import java.time.LocalDate;
+import java.time.Localdatefacture;
 
 
 public class Facture
 {
 	private boolean estReglee;
-	private LocalDate date;
+	private Localdatefacture datefacture;
 	private Double montant;
 
 	Facture (){}
 
-	Facture (boolean estReglee, LocalDate date, Double montant){
+	Facture (boolean estReglee, Localdatefacture datefacture, Double montant){
 		if (montant>0) {
 			this.estReglee = estReglee;
-			this.date = date.now();
+			this.datefacture = datefacture.now();
 			this.montant = montant;
 		}
 	}
@@ -50,13 +50,13 @@ public class Facture
 	}
 
 	/**
-	 * Retourne la date de la facture.
-	 * @return la date de la facture.
+	 * Retourne la datefacture de la facture.
+	 * @return la datefacture de la facture.
 	 */
 	
-	public LocalDate getDate()
+	public Localdatefacture getdatefacture()
 	{
-		return this.date;
+		return this.datefacture;
 	}
 
 	/**
