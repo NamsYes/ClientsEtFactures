@@ -4,8 +4,7 @@ import java.time.LocalDate;
 
 public class Facture
 {
-
-	Bool estReglee;
+	boolean estReglee;
 	String date;
 	Double montant;
 
