@@ -2,6 +2,7 @@ package metier;
 
 import java.time.LocalDate;
 
+
 public class Facture
 {
 	boolean estReglee;
@@ -54,7 +55,7 @@ public class Facture
 	
 	public LocalDate getDate()
 	{
-		LocalDateTime time = LocalDateTime.now();
+		LocalDate time = LocalDate.now();
 		return time;
 	}
 
