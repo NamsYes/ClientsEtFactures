@@ -73,7 +73,7 @@ public class Facture
 	 * @return une copie de la facture.
 	 */
 	
-	public Facture copie(Facture factureCopy)
+	public Facture copie()
 	{
 		Facture newFacture = new Facture ();
 		return null;
