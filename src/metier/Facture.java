@@ -12,6 +12,11 @@ public class Facture
 
 	Facture (){}
 
+	Facture (Double montant) {
+		this.montant=montant;
+		this.date=date.now();
+	}
+
 	Facture (boolean estReglee, LocalDate date, Double montant){
 		if (montant>0) {
 			this.estReglee = estReglee;
