@@ -50,8 +50,7 @@ public class Client {
 	public Facture createFacture(Facture montant)
 	{
 		Facture newFacture = new Facture (montant);
-
-		return null ;
+		return newFacture ;
 	}
 	
 	/**

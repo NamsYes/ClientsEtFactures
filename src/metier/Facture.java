@@ -14,7 +14,6 @@ public class Facture
 
 	Facture (int montant) {
 		this.montant=montant;
-		this.date=date.now();
 	}
 
 	Facture (boolean estReglee, LocalDate date, int montant){
