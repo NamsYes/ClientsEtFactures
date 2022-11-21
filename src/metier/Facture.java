@@ -10,7 +10,7 @@ public class Facture
 
 	Facture () {}
 
-	Facture (Bool estReglee, String date, Double montant){
+	Facture (boolean estReglee, String date, Double montant){
 		this.estReglee=estReglee;
 		this.date=date;
 		this.montant=montant;
