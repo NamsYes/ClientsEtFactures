@@ -6,18 +6,18 @@ import java.time.LocalDate;
 public class Facture
 {
 	private Client client;
-	private Double montant;
+	private int montant;
 	private LocalDate date;
 	private boolean estReglee;
 
 	Facture (){}
 
-	Facture (Double montant) {
+	Facture (int montant) {
 		this.montant=montant;
 		this.date=date.now();
 	}
 
-	Facture (boolean estReglee, LocalDate date, Double montant){
+	Facture (boolean estReglee, LocalDate date, int montant){
 		if (montant>0) {
 			this.estReglee = estReglee;
 			this.date = date.now();
@@ -40,7 +40,7 @@ public class Facture
 	 * @return le montant de la facture.
 	 */
 
-	public Double getMontant()
+	public int getMontant()
 	{
 		return montant;
 	}
