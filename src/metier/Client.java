@@ -47,7 +47,7 @@ public class Client {
 	 * @return la facture créée.
 	 */
 	
-	public Facture createFacture(Facture montant)
+	public Facture createFacture(int montant)
 	{
 		Facture newFacture = new Facture (int montant);
 		return newFacture ;
