@@ -49,7 +49,7 @@ public class Client {
 	
 	public Facture createFacture(Facture montant)
 	{
-		Facture newFacture = new Facture (montant);
+		Facture newFacture = new Facture (int montant);
 		return newFacture ;
 	}
 	
