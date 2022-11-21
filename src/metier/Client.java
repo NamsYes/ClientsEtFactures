@@ -3,7 +3,7 @@ package metier;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Client
+public class Client {
 
 
 	//Attributs
@@ -50,7 +50,7 @@ public class Client
 	
 	public Facture createFacture(int montant)
 	{
-		Facture newFacture = new Facture ()
+		Facture newFacture = new Facture ();
 
 		return ;
 	}

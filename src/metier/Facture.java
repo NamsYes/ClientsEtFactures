@@ -9,8 +9,7 @@ public class Facture
 	String date;
 	Double montant;
 
-	Facture () {
-	}
+	Facture () {}
 
 	Facture (Bool estReglee, String date, Double montant){
 		this.estReglee=estReglee;
