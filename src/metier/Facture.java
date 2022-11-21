@@ -5,9 +5,9 @@ import java.time.LocalDate;
 
 public class Facture
 {
-	boolean estReglee;
-	String date;
-	Double montant;
+	private boolean estReglee;
+	private String date;
+	private Double montant;
 
 	Facture (){}
 
@@ -18,7 +18,6 @@ public class Facture
 			this.montant = montant;
 		}
 	}
-
 
 	/**
 	 * Retourne le client à qui est adressée la facture..
@@ -57,7 +56,7 @@ public class Facture
 	
 	public LocalDate getDate()
 	{
-		LocalDate time = LocalDate.now();
+		LocalDate time = LocalDate();
 		return time;
 	}
 
