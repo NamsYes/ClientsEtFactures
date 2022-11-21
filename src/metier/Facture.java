@@ -6,23 +6,19 @@ import java.time.Localdatefacture;
 public class Facture
 {
 	private Client client;
-	private Double montantfacturefacture;
+	private Double montantFacture;
 	private Localdatefacture datefacture;
-	private boolean reglementfacture;
+	private boolean reglementFacure;
+
+
 
 	Facture (){}
-	
-	Facture (Client client){
-		this.client=client;
-		this.datefacture=date.now();
-		this.reglementfacture= false;
-	}
 
-	Facture (boolean reglementfacture, Localdatefacture datefacture, Double montantfacture){
-		if (montantfacture>0) {
-			this.reglementfacture = reglementfacture;
+	Facture (boolean reglementFacure, Localdatefacture datefacture, Double montant){
+		if (montant>0) {
+			this.reglementFacure = reglementFacure;
 			this.datefacture = datefacture.now();
-			this.montantfacture = montantfacture;
+			this.montant = montant;
 		}
 	}
 
@@ -33,27 +29,27 @@ public class Facture
 
 	public Client getClient()
 	{
-		return client;
+		return null;
 	}
 
 	/** GOOD
-	 * Retourne le montantfacture de la facture.
-	 * @return le montantfacture de la facture.
+	 * Retourne le montant de la facture.
+	 * @return le montant de la facture.
 	 */
-	
-	public Double getmontantfacture()
+
+	public Double getMontant()
 	{
-		return montantfacture;
+		return montant;
 	}
 
 	/** GOOD
 	 * Retourne vrai si la facture est reglée.
 	 * @return vrai ssi la facture est reglée.
 	 */
-	
-	public boolean reglementfacture()
+
+	public boolean estReglee()
 	{
-		return reglementfacture;
+		return reglementFacure;
 	}
 
 	/**
