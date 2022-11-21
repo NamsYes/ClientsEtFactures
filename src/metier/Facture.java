@@ -61,7 +61,7 @@ public class Facture
 
 	public LocalDate getDate()
 	{
-		return this.date;
+		return date;
 	}
 
 	/**
