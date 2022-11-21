@@ -52,7 +52,7 @@ public class Client {
 	{
 		Facture newFacture = new Facture ();
 
-		return ;
+		return null ;
 	}
 	
 	/**

@@ -32,7 +32,7 @@ public class Facture
 	 * @return le montant de la facture.
 	 */
 	
-	public int getMontant()
+	public Double getMontant()
 	{
 		return montant;
 	}
